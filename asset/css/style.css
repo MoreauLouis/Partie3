@@ -2,7 +2,8 @@ Body {
   background-image:url(../image/marais.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-}
+  }
+
 header.tete {
   background:no-repeat url(../image/header.jpg);
   height: 500px;
@@ -13,7 +14,7 @@ h1 {
   font-size: 180px;
   text-align: center;
   padding-top: 15px;
-  font-family: 'Abril Fatface', cursive;;
+  font-family: 'Abril Fatface', cursive;
 }
 #police {
   font-family: 'Teko', sans-serif;
@@ -30,59 +31,107 @@ ul {
   background-color: #333333;
   /* Arrondir les bords */
   border-radius: 30px;
+  height: 40px;
+  padding: 30px;
 }
 li a {
+
   color: white;
   font-size: 50px;
   padding: 50px;
   /* enlever les effets des liens */
   text-decoration: none;
+  display: block;
+  line-height: 40px;
+  padding: 0 70px
 }
 li a:hover {
   /* Interaction quand la souris passe */
   background-color: #111111;
   font-size: 60px;
-  border-radius: 50px;
+  border-radius: 40px;
 }
  #home {
-   /* petite image de l'accueil */
+/* petite image de l'accueil */
    height: 50px;
    width: 50px;
    }
-#recherche {
-  padding: 20px 20px 20px 20px;
-  border: none;
-}
+
+/* SearchBar */
 #search {
   border: none;
-  width: 1000px;
+  width: 800px;
   height: 50px;
-  box-sizing: border-box;
   font-size: 20px;
-  float: center;
-
 }
 #search-btn {
   background-color: #E8B960;
-  border-style: solid;
-  border-width: 1px;   /* Epaisseur de la bordure  */
   border-color: #E8B960;
-  padding: 5px 10px 5px 10px;
-  width: 400px;
 
+  width: 300px;
   font-family: 'Teko', sans-serif;
   font-size: 30px;
   letter-spacing: 2px;
-  margin: 10px 0 0 0;  /
-  text-transform: uppercase;   /* Transforme le texte en majuscules */
-  color: #ffffff;
 }
-input id#search-btn:hover {
-
+#search-btn:hover {
+  font-size: 40px;
 }
 #premierBloc {
  font-size: 50px;
- .premierTitre {
-   font-family: 'Teko', sans-serif;
-   font-size: 50px;
- }
+ height: 900px;
+ color: #FFFFFF;
+ background-color: #333333;
+ background-color: rgba(111, 111, 111, 0.5);
+
+ margin: 10%;
+ border-radius: 40px;
+}
+
+/* lesTroisBlocs */
+#conteneur img{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  background-color: #333333
+  }
+#conteneur {
+  display: flex;
+  flex-direction: row;
+  height: 1700px;
+  padding: 70px;
+  margin: 200px;
+  background-color: #333333;
+  background-color: rgba(111, 111, 111, 0.5);
+  border-radius: 40px;
+  font-size: 50px;
+  border: shadow;
+  text-align: center;
+}
+h2 {
+  font-size: 80px;
+}
+h3 {
+  font-size: 180px;
+  text-align: center;
+
+  font-family: 'Abril Fatface', cursive;
+}
+
+/* grossirImageSiSourisPasse> */
+.element1:hover img {
+  width: 40%;
+  transform:scale(1.10);
+
+}
+.element2:hover img {
+  width: 40%;
+  transform:scale(1.10);
+
+}
+.element3:hover img {
+  width: 40%;
+  transform:scale(1.10);
+}
+.element1 {
+}
